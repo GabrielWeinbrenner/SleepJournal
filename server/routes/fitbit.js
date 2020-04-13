@@ -21,7 +21,7 @@ router.get("/callback", (req, res) => {
     client.getAccessToken(req.query.code, 'http://localhost:3000/fitbit/callback').then(result => {
         // use the access token to fetch the user's profile information
         client.get("/sleep/date/2020-04-02/2020-04-08.json", result.access_token).then(results => {
-            res.send(results);
+            res.send(results[0]);
         }).catch(err => {
             res.status(err.status).send(err);
         });
