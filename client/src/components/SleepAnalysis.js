@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class SleepAnalysis extends Component {
     render() {
         return (
-            <div>
+            <div className="col">
                 
             </div>
         )
