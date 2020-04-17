@@ -22,7 +22,7 @@ export class App extends Component {
                 <div className="row">
                     <HorizontalDates />
                 </div>
-                <div className="row">
+                <div className="row" style={{marginTop: 20}}>
                     <SleepAnalysis />
                     <SleepLog />
                 </div>
